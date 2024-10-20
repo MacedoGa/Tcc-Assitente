@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+:root {
+    --bg-url: url(../img/Background.png);
+    --text-color-msg: whitesmoke;
+
+}
+
+.light{
+    --bg-url: url(../img/BackgroundLight.png);
+    --text-color-msg: black;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body{
+    background-image: var(--bg-url);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+}
+
+.container{
+width: 420px;
+background-color: transparent;
+border: 2px solid rgba(255, 255, 255, 0.2);
+border-radius: 10px;
+color: var(--text-color-msg);
+padding: 30px 40px;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+backdrop-filter: blur(50px);
+
+}
+
+.container h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    
+}
+
+.input input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    color: var(--text-color-msg);
+    padding: 10px 45px 20px 20px;
+
+
+}
+
+.input input::placeholder {
+    color: #cccaca;
+}
+
+.input i {
+    position: absolute;
+    right: 20px;
+    top: 25%;
+    font-size: 20px;
+}
+
+.remember{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+
+.remember label input{
+    accent-color: var(--text-color-msg);
+    margin-right: 7px ;
+}
+
+.remember a{
+    text-decoration: none;
+    color: var(--text-color-msg);
+
+}
+
+.remember a:hover{
+    text-decoration: underline;
+}
+
+.login{
+    display: inline-block;         /* Permite ajustar largura e altura */
+    width: 100%;                   /* Largura total, igual ao botão */
+    height: 50px;                  /* Altura de 50px */
+    background-color:var(--text-color-msg);   /* Fundo branco */
+    border: none;                  /* Sem borda */
+    border-radius: 40px;           /* Bordas arredondadas */
+    cursor: pointer;               /* Exibe o cursor de "mãozinha" */
+    font-size: 15px;               /* Tamanho do texto */
+    color: #333;                   /* Cor do texto */
+    font-weight: 600;              /* Peso da fonte */
+    text-align: center;            /* Centraliza o texto horizontalmente */
+    line-height: 50px;             /* Centraliza o texto verticalmente */
+    text-decoration: none;         /* Remove a sublinha do link */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; /* Sombra */
+    margin-top: 20px;  
+}
+
+.login a{
+    text-decoration: none;
+}
+
+.login:hover{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-color-msg);
+    transition: 0.5s;
+
+}
+
+.register{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+
+}
+
+.register a{
+    text-decoration: none;
+    color: var(--text-color-msg);
+    font-weight: 600;
+}
+
+.register a:hover{
+    text-decoration: underline;
+
+}
+
+.btLight{
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}
